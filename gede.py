@@ -22,4 +22,8 @@ class Gede(object):
 		a = qelf.shapes(0)
 		a.shapetype
 
-
+	def __init__(adcp,jakarta):
+		adcp.sf = shapefile.Reader(jakarta)
+	def melihattype(adcp):
+		f = adcp.shapes(0)
+		f.shapetype
