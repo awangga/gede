@@ -15,6 +15,11 @@ class Gede(object):
 			if a[8] == NEGARA:
 				return i
 			i=i+1
-
+			
+	def __init__(qefl,bandung):
+		qefl.sf = shapefile.Reader(bandung)
+	def melihattype(qefl):
+		a = qelf.shapes(0)
+		a.shapetype
 
 
