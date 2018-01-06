@@ -18,6 +18,12 @@ class Gede(object):
 				if a[1] == Kolam Renang Karang Setra:
 						return i
 				i=i+1
+	def selectTempat(self,Politeknik Pos Indonesia):
+		i =0 
+		for a in self.sf.records():
+				if a[1] == Politeknik Pos Indonesia:
+						return i
+				i=i+1
 			
 	def __init__(self,Medan):
 		self.sf = shapefile.Reader(Medan)
