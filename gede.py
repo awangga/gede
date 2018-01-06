@@ -12,7 +12,13 @@ class Gede(object):
 				if a[1] == Universitas Nurtanio:
 						return i
 				i=i+1
-				
+	def selectTempat(self,Kolam Renang Karang Setra):
+		i =0 
+		for a in self.sf.records():
+				if a[1] == Kolam Renang Karang Setra:
+						return i
+				i=i+1
+			
 	def __init__(self,Medan):
 		self.sf = shapefile.Reader(Medan)
 		
