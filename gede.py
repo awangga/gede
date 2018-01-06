@@ -22,22 +22,15 @@ class Gede(object):
         	self.labelfilename = ''
 		self.tkimg = None
 		
-        	self.STATE = {}
+		self.STATE = {}
         	self.STATE['click'] = 0
         	self.STATE['x'], self.STATE['y'] = 0, 0
 		
-        	self.bboxIdList = []
+		self.bboxIdList = []
         	self.bboxId = None
         	self.bboxList = []
         	self.hl = None
         	self.vl = None
-
-                self.label = Label(self.frame, text = "Image Dir:")
-        	self.label.grid(row = 0, column = 0, sticky = E)
-        	self.entry = Entry(self.frame)
-        	self.entry.grid(row = 0, column = 1, sticky = W+E)
-        	self.ldBtn = Button(self.frame, text = "Load", command = self.loadDir)
-        	self.ldBtn.grid(row = 0, column = 2, sticky = W+E)
 		
 self.parent.resizable(width = FALSE, height = FALSE)
 
