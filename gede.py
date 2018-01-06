@@ -39,6 +39,14 @@ class Gede(object):
         	self.ldBtn = Button(self.frame, text = "Load", command = self.loadDir)
         	self.ldBtn.grid(row = 0, column = 2, sticky = W+E)
 		
+			
+		self.label = Label(self.frame, text = "Image Dir:")
+        	self.label.grid(row = 1, column = 0, sticky = E)
+        	self.entry = Entry(self.frame)
+        	self.entry.grid(row = 1, column = 1, sticky = W+E)
+        	self.ldBtn = Button(self.frame, text = "Load", command = self.loadDir)
+        	self.ldBtn.grid(row = 1, column = 2, sticky = W+E)
+		
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
