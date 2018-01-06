@@ -10,6 +10,18 @@ class Gede(object):
        	 	self.frame = Frame(self.parent)
         	self.frame.pack(fill=BOTH, expand=1)
 		
+		self.imageDir = ''
+        	self.imageList= []
+        	self.egDir = ''
+        	self.egList = []
+        	self.outDir = ''
+        	self.cur = 0
+        	self.total = 0
+        	self.category = 0
+        	self.imagename = ''
+        	self.labelfilename = ''
+		self.tkimg = None
+		
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
