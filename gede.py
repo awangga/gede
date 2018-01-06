@@ -27,3 +27,9 @@ class Gede(object):
 	def melihattype(adcp):
 		f = adcp.shapes(0)
 		f.shapetype
+
+	def __init__(smg,semarang):
+		qefl.sf = shapefile.Reader(semarang)
+	def melihattype(smg):
+		b = qelf.shapes(0)
+		b.shapetype
