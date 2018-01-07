@@ -51,4 +51,37 @@ class Gede(object):
 			i = i + 1
 		
 
-
+	def selectJalan(self,Jalan Dago):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Dago:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Surapati):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Surapati:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Diponegoro):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Diponegoro:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Citarum):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Citarum:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Banda):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Banda:
+				return i 
+			i = i + 1
