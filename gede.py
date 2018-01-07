@@ -26,6 +26,15 @@ class Gede(object):
 				return i 
 			i = i + 1
 			
+		def __init__(self,bandung):
+		self.sf = shapefile.Reader(bandung)
+		
+	def selectJalan(self,Jalan Sarijadi Raya):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sarijadi Raya:
+				return i 
+			i = i + 1
 
 			
 
