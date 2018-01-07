@@ -1,6 +1,17 @@
 #!/usr/bin/python
 
 import shapefile
+from Tkinter import *
+import tkMessageBox
+from PIL import Image, ImageTk
+import os
+import glob
+import random
+
+# colors for the bboxes
+COLORS = ['red', 'blue', 'yellow', 'pink', 'cyan', 'green', 'black']
+# image sizes for the examples
+SIZE = 256, 256
 
 class Gede(object):
 	def __init__(self,namafile):
