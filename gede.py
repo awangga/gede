@@ -66,3 +66,13 @@ class Gede(object):
 				if a[1] == Dufan:
 						return i
 				i=i+1
+
+	def __init__(self,Bandung):
+		self.sf = shapefile.Reader(Bandung)
+		
+	def selectTempat(self, NuArt Sculpture Park):
+		i =0
+		for a in self.sf.records():
+				if a[1] == NuArt Sculpture Park:
+						return i
+				i=i+1			
