@@ -29,7 +29,13 @@ class Gede(object):
 		f.shapetype
 
 	def __init__(smg,semarang):
-		qefl.sf = shapefile.Reader(semarang)
+		smg.sf = shapefile.Reader(semarang)
 	def melihattype(smg):
-		b = qelf.shapes(0)
+		b = smg.shapes(0)
 		b.shapetype
+
+	def __init__(sby,surabaya):
+		sby.sf = shapefile.Reader(surabaya)
+	def melihattype(sby):
+		z = sby.shapes(0)
+		z.shapetype
