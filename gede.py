@@ -40,12 +40,19 @@ class Gede(object):
         	self.ldBtn.grid(row = 0, column = 2, sticky = W+E)
 		
 			
-		self.label = Label(self.frame, text = "Image Dir:")
+		(self.label = Label(self.frame, text = "Image Dir:")
         	self.label.grid(row = 1, column = 0, sticky = E)
         	self.entry = Entry(self.frame)
         	self.entry.grid(row = 1, column = 1, sticky = W+E)
         	self.ldBtn = Button(self.frame, text = "Load", command = self.loadDir)
-        	self.ldBtn.grid(row = 1, column = 2, sticky = W+E)
+        	self.ldBtn.grid(row = 1, column = 2, sticky = W+E) )
+		
+		(self.label = Label(self.frame, text = "Image Dir:")
+        	self.label.grid(row = 1, column = 0, sticky = E)
+        	self.entry = Entry(self.frame)
+        	self.entry.grid(row = 2, column = 1, sticky = W+E)
+        	self.ldBtn = Button(self.frame, text = "Load", command = self.loadDir)
+        	self.ldBtn.grid(row = 3, column = 2, sticky = W+E) )
 		
 		self.lb1 = Label(self.frame, text = 'Bounding boxes:')
        		self.lb1.grid(row = 1, column = 2,  sticky = W+N)
