@@ -104,6 +104,14 @@ class Gede(object):
 
         		self.frame.columnconfigure(1, weight = 1)
         		self.frame.rowconfigure(4, weight = 1)
+	def loadDir(self, dbg = False):
+        if not dbg:
+            s = self.entry.get()
+            self.parent.focus()
+            self.category = int(s)
+        else:
+		s = r'D:\workspace\python\labelGUI'
+
 		
 self.parent.resizable(width = FALSE, height = FALSE)
 
