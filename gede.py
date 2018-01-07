@@ -71,6 +71,22 @@ class Gede(object):
         	self.goBtn = Button(self.ctrPanel, text = 'Go', command = self.gotoImage)
         	self.goBtn.pack(side = LEFT)
 		
+		self.egPanel = Frame(self.frame, border = 10)
+        	self.egPanel.grid(row = 1, column = 0, rowspan = 5, sticky = N)
+        	self.tmpLabel2 = Label(self.egPanel, text = "Examples:")
+        	self.tmpLabel2.pack(side = TOP, pady = 5)
+        	self.egLabels = []
+		
+        	for i in range(3):
+            		self.egLabels.append(Label(self.egPanel))
+            		self.egLabels[-1].pack(side = TOP)
+			
+        		self.disp = Label(self.ctrPanel, text='')
+        		self.disp.pack(side = RIGHT)
+
+        		self.frame.columnconfigure(1, weight = 1)
+        		self.frame.rowconfigure(4, weight = 1)
+		
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
