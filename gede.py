@@ -24,7 +24,13 @@ class Gede(object):
 				if a[1] == Politeknik Pos Indonesia:
 						return i
 				i=i+1
-			
+	def selectTempat(self,Kartika Sari):
+		i =0 
+		for a in self.sf.records():
+				if a[1] == Kartika Sari:
+						return i
+				i=i+1
+
 	def __init__(self,Medan):
 		self.sf = shapefile.Reader(Medan)
 		
