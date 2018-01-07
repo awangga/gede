@@ -34,14 +34,18 @@ class Gede(object):
 				if a[1] == Masjid Raya:
 						return i
 				i=i+1
-				
-	def __init__(self,Medan):
-		self.sf = shapefile.Reader(Medan)
 		
 	def selectTempat(self, Lapangan Benteng):
 		i =0
 		for a in self.sf.records():
 				if a[1] == Lapangan Benteng:
+						return i
+				i=i+1
+				
+	def selectTempat(self, Merdeka Walk):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Merdeka Walk:
 						return i
 				i=i+1
 
