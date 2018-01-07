@@ -56,6 +56,21 @@ class Gede(object):
         	self.btnClear = Button(self.frame, text = 'ClearAll', command = self.clearBBox)
         	self.btnClear.grid(row = 4, column = 2, sticky = W+E+N)
 		
+		self.ctrPanel = Frame(self.frame)
+        	self.ctrPanel.grid(row = 5, column = 1, columnspan = 2, sticky = W+E)
+        	self.prevBtn = Button(self.ctrPanel, text='<< Prev', width = 10, command = self.prevImage)
+		self.prevBtn.pack(side = LEFT, padx = 5, pady = 3)
+        	self.nextBtn = Button(self.ctrPanel, text='Next >>', width = 10, command = self.nextImage)
+        	self.nextBtn.pack(side = LEFT, padx = 5, pady = 3)
+        	self.progLabel = Label(self.ctrPanel, text = "Progress:     /    ")
+        	self.progLabel.pack(side = LEFT, padx = 5)
+        	self.tmpLabel = Label(self.ctrPanel, text = "Go to Image No.")
+        	self.tmpLabel.pack(side = LEFT, padx = 5)
+        	self.idxEntry = Entry(self.ctrPanel, width = 5)
+        	self.idxEntry.pack(side = LEFT)
+        	self.goBtn = Button(self.ctrPanel, text = 'Go', command = self.gotoImage)
+        	self.goBtn.pack(side = LEFT)
+		
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
