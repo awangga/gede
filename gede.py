@@ -22,10 +22,10 @@ class Gede(object):
 		a = qelf.shapes(0)
 		a.shapetype
 
-	def __init__(adcp,jakarta):
-		adcp.sf = shapefile.Reader(jakarta)
-	def melihattype(adcp):
-		f = adcp.shapes(0)
+	def __init__(jkt,jakarta):
+		jkt.sf = shapefile.Reader(jakarta)
+	def melihattype(jkt):
+		f = jkt.shapes(0)
 		f.shapetype
 
 	def __init__(smg,semarang):
@@ -38,4 +38,10 @@ class Gede(object):
 		sby.sf = shapefile.Reader(surabaya)
 	def melihattype(sby):
 		z = sby.shapes(0)
+		z.shapetype
+		
+	def __init__(mdn,medan):
+		mdn.sf = shapefile.Reader(medan)
+	def melihattype(mdn):
+		z = mdn.shapes(0)
 		z.shapetype
