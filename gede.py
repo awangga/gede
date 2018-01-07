@@ -90,4 +90,11 @@ class Gede(object):
 		for a in self.sf.records():
 				if a[1] == Klenteng Sam Poo Kong:
 						return i
-				i=i+1			
+				i=i+1		
+				
+	def selectTempat(self, Lawang Sewu):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Lawang Sewu:
+						return i
+				i=i+1	
