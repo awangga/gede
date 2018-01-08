@@ -37,6 +37,19 @@ class Gede(object):
 				if a[1] == Universitas Kristen Maranata:
 						return i
 				i=i+1
+	def selectTempat(self, The Lodge Maribaya Jawa Barat):
+		i =0
+		for a in self.sf.records():
+				if a[1] == The Lodge Maribaya Jawa Barat:
+						return i
+				i=i+1
+				
+	def selectTempat(self, The Lodge Maribaya Bandung Jawa Barat):
+		i =0
+		for a in self.sf.records():
+				if a[1] == The Lodge Maribaya Bandung Jawa Barat:
+						return i
+				i=i+1
 
 
 
@@ -107,18 +120,13 @@ class Gede(object):
 				if a[1] == Lawang Sewu:
 						return i
 				i=i+1	
-
-	def selectTempat(self, The Lodge Maribaya Jawa Barat):
-		i =0
-		for a in self.sf.records():
-				if a[1] == The Lodge Maribaya Jawa Barat:
-						return i
-				i=i+1
 				
-	def selectTempat(self, The Lodge Maribaya Bandung Jawa Barat):
+	def selectTempat(self, Water Blaster):
 		i =0
 		for a in self.sf.records():
-				if a[1] == The Lodge Maribaya Bandung Jawa Barat:
+				if a[1] == Water Blaster:
 						return i
-				i=i+1
+				i=i+1	
+
+	
 
