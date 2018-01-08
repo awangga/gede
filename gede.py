@@ -6,13 +6,13 @@ class Gede(object):
 	def __init__(self,bandung):
 		self.sf = shapefile.Reader(bandung)
 		
-	def selectTempat(self,Universitas Nurtanio):
+	def selectTempat(self,Universitas_Nurtanio):
 		i =0 
 		for a in self.sf.records():
 				if a[1] == Universitas Nurtanio:
 						return i
 				i=i+1
-	def selectTempat(self,Kolam Renang Karang Setra):
+	def selectTempat(self,Kolam_Renang_Karang_Setra):
 		i =0 
 		for a in self.sf.records():
 				if a[1] == Kolam Renang Karang Setra:
@@ -24,10 +24,16 @@ class Gede(object):
 				if a[1] == Politeknik Pos Indonesia:
 						return i
 				i=i+1
-	def selectTempat(self,Kartika Sari):
+	def selectTempat(self,Kartika_Sari):
 		i =0 
 		for a in self.sf.records():
 				if a[1] == Kartika Sari:
+						return i
+				i=i+1
+	def selectTempat(self,Borma_Toserba_Setiabudi):
+		i =0 
+		for a in self.sf.records():
+				if a[1] == Borma_Toserba_Setiabudi:
 						return i
 				i=i+1
 				
