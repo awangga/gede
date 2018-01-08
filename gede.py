@@ -149,6 +149,22 @@ class Gede(object):
 	    self.loadImage()
  	    print '%d images loaded from %s' %(self.total, s)
 		
+	def loadImage(self):
+        # load image
+        imagepath = self.imageList[self.cur - 1]
+        self.img = Image.open(imagepath)
+        self.tkimg = ImageTk.PhotoImage(self.img)
+        self.mainPanel.config(width = max(self.tkimg.width(), 400), height = max(self.tkimg.height(), 400))
+        self.mainPanel.create_image(0, 0, image = self.tkimg, anchor=NW)
+        self.progLabel.config(text = "%04d/%04d" %(self.cur, self.total))
+
+        # load labels
+        self.clearBBox()
+        self.imagename = os.path.split(imagepath)[-1].split('.')[0]
+        labelname = self.imagename + '.txt'
+        self.labelfilename = os.path.join(self.outDir, labelname)
+	bbox_cnt = 0
+
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
