@@ -75,7 +75,14 @@ class Gede(object):
 			if a[1] == Jalan Dago:
 				return i 
 			i = i + 1
-			
+	
+	def selectJalan(self,Jalan Layang Pasupati):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Layang Pasupati:
+				return i 
+			i = i + 1
+	
 	def selectJalan(self,Jalan Surapati):
 		i = 0
 		for a in self.sf.records():
