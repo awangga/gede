@@ -111,6 +111,12 @@ class Gede(object):
             self.category = int(s)
         else:
 		s = r'D:\workspace\python\labelGUI'
+		
+	self.imageDir = os.path.join(r'./Images', '%03d' %(self.category))
+        self.imageList = glob.glob(os.path.join(self.imageDir, '*.JPEG'))
+        if len(self.imageList) == 0:
+            print 'No .JPEG images found in the specified dir!'
+            return
 
 		
 self.parent.resizable(width = FALSE, height = FALSE)
