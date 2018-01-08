@@ -102,25 +102,17 @@ class Gede(object):
 			i = i + 1
 
 			
+	def selectJalan(self,Jalan Laswi):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Laswi:
+				return i 
+			i = i + 1	
 			
-			
-			
-			
-			
-			
-	def __init__(self,Kupang):
-		self.sf = shapefile.Reader(Kupang)
+ 	def selectJalan(self,Jalan Soekarno Hatta):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Soekarno Hatta:
+				return i 
+			i = i + 1
 		
-	def selectJalan(self,Jalan El Tari):
-		i = 0
-		for a in self.sf.records():
-			if a[1] == Jalan El Tari:
-				return i 
-			i = i + 1
-			
-	def selectJalan(self,Jalan Jenderal Sudirman):
-		i = 0
-		for a in self.sf.records():
-			if a[1] == Jalan Jenderal Sudirman:
-				return i 
-			i = i + 1
