@@ -53,35 +53,42 @@ class Gede(object):
 
 
 
-	def __init__(self,Medan):
-		self.sf = shapefile.Reader(Medan)
+	def __init__(self,Bandung):
+		self.sf = shapefile.Reader(Bandung)
 		
-	def selectTempat(self, Masjid Raya):
+	def selectTempat(self, Masjid Raya Bandung):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Masjid Raya:
+				if a[1] == Masjid Raya Bandung:
 						return i
 				i=i+1
 		
-	def selectTempat(self, Lapangan Benteng):
+	def selectTempat(self, Alun Alun Bandung):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Lapangan Benteng:
+				if a[1] == Alun Alun Bandung:
 						return i
 				i=i+1
 				
-	def selectTempat(self, Merdeka Walk):
+	def selectTempat(self, Tugu Asia Afrika):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Merdeka Walk:
+				if a[1] == Tugu Asia Afrika:
+						return i
+				i=i+1
+				
+	def selectTempat(self, Gedung Merdeka):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Gedung Merdeka:
 						return i
 				i=i+1
 
 		
-	def selectTempat(self, Mall Kartini):
+	def selectTempat(self, Museum Konferensi Asia Afrika):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Mall Kartini:
+				if a[1] == Museum Konferensi Asia Afrika:
 						return i
 				i=i+1
 
