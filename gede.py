@@ -139,4 +139,21 @@ self.parent.resizable(width = FALSE, height = FALSE)
 			i=i+1
 
 
+def nextImage(self, event = None):
+        self.saveImage()
+        if self.cur < self.total:
+            self.cur += 1
+            self.loadImage()
 
+    def gotoImage(self):
+        idx = int(self.idxEntry.get())
+        if 1 <= idx and idx <= self.total:
+            self.saveImage()
+            self.cur = idx
+            self.loadImage()
+
+if __name__ == '__main__':
+    root = Tk()
+    tool = LabelTool(root)
+    root.resizable(width =  True, height = True)
+    root.mainloop()
