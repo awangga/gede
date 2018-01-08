@@ -55,9 +55,6 @@ class Gede(object):
 						return i
 				i=i+1
 
-
-	def __init__(self,Bandar Lampung):
-		self.sf = shapefile.Reader(Bandar Lampung)
 		
 	def selectTempat(self, Mall Kartini):
 		i =0
@@ -77,9 +74,6 @@ class Gede(object):
 						return i
 				i=i+1
 
-	def __init__(self,Bandung):
-		self.sf = shapefile.Reader(Bandung)
-		
 	def selectTempat(self, NuArt Sculpture Park):
 		i =0
 		for a in self.sf.records():
@@ -104,3 +98,10 @@ class Gede(object):
 				if a[1] == Lawang Sewu:
 						return i
 				i=i+1	
+
+	def selectTempat(self, Kebun Binatang Bandung Jawa Barat):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Kebun Binatang Bandung Jawa Barat:
+						return i
+				i=i+1
