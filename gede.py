@@ -30,6 +30,15 @@ class Gede(object):
 				if a[1] == Kartika Sari:
 						return i
 				i=i+1
+				
+	def selectTempat(self,Universitas Kristen Maranata):
+	i =0 
+	for a in self.sf.records():
+				if a[1] == Universitas Kristen Maranata:
+						return i
+				i=i+1
+
+
 
 	def __init__(self,Medan):
 		self.sf = shapefile.Reader(Medan)
