@@ -52,3 +52,9 @@ class Gede(object):
 		z = mks.shapes(0)
 		z.shapetype
 
+	def __init__(pnt,pontianak):
+		pnt.sf = shapefile.Reader(pontianak)
+	def melihattype(pnt):
+		c = pnt.shapes(0)
+		c.shapetype
+
