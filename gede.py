@@ -45,3 +45,10 @@ class Gede(object):
 	def melihattype(mdn):
 		z = mdn.shapes(0)
 		z.shapetype
+		
+	def __init__(mks,makasar):
+		mks.sf = shapefile.Reader(makasar)
+	def melihattype(mks):
+		z = mks.shapes(0)
+		z.shapetype
+
