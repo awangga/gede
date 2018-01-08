@@ -108,9 +108,17 @@ class Gede(object):
 						return i
 				i=i+1	
 
-	def selectTempat(self, Kebun Binatang Bandung Jawa Barat):
+	def selectTempat(self, The Lodge Maribaya Jawa Barat):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Kebun Binatang Bandung Jawa Barat:
+				if a[1] == The Lodge Maribaya Jawa Barat:
 						return i
 				i=i+1
+				
+	def selectTempat(self, The Lodge Maribaya Bandung Jawa Barat):
+		i =0
+		for a in self.sf.records():
+				if a[1] == The Lodge Maribaya Bandung Jawa Barat:
+						return i
+				i=i+1
+
