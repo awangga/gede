@@ -129,6 +129,26 @@ class Gede(object):
         if not os.path.exists(self.outDir):
             os.mkdir(self.outDir)
 	
+	self.egDir = os.path.join(r'./Examples', '%03d' %(self.category))
+        if not os.path.exists(self.egDir):
+            return
+        filelist = glob.glob(os.path.join(self.egDir, '*.JPEG'))
+        self.tmp = []
+        self.egList = []
+        random.shuffle(filelist)
+        for (i, f) in enumerate(filelist):
+            if i == 3:
+                break
+            im = Image.open(f)
+            r = min(SIZE[0] / im.size[0], SIZE[1] / im.size[1])
+            new_size = int(r * im.size[0]), int(r * im.size[1])
+            self.tmp.append(im.resize(new_size, Image.ANTIALIAS))
+            self.egList.append(ImageTk.PhotoImage(self.tmp[-1]))
+	    self.egLabels[i].config(image = self.egList[-1], width = SIZE[0], height = SIZE[1])
+
+	    self.loadImage()
+ 	    print '%d images loaded from %s' %(self.total, s)
+		
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
