@@ -128,4 +128,10 @@ class Gede(object):
 				return i 
 			i = i + 1
 		
+	def selectJalan(self,Jalan Raya Lembang):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Raya Lembang:
+				return i 
+			i = i + 1	
 		
