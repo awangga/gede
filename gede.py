@@ -118,7 +118,14 @@ class Gede(object):
             print 'No .JPEG images found in the specified dir!'
             return
 
-		
+		self.cur = 1
+        self.total = len(self.imageList)
+
+         # set up output dir
+        self.outDir = os.path.join(r'./Labels', '%03d' %(self.category))
+        if not os.path.exists(self.outDir):
+            os.mkdir(self.outDir)
+	
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
