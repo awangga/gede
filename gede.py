@@ -134,6 +134,6 @@ class Gede(object):
 	def selectTempat(self, Paris Van Java):
 		i =0
 		for a in self.sf.records():
-				if a[1] ==Paris Van Java:
+				if a[1] == Paris Van Java:
 						return i
 				i=i+1
