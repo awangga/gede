@@ -165,3 +165,10 @@ class Gede(object):
 				if a[1] == Kawah Putih:
 						return i
 				i=i+1
+				
+				def selectTempat(self, Kawah Putih):
+		i =0
+		for a in self.sf.records():
+				if a[1] == villa istana bunga:
+						return i
+				i=i+1
