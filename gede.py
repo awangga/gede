@@ -43,14 +43,14 @@ class Gede(object):
 	def __init__(mdn,medan):
 		mdn.sf = shapefile.Reader(medan)
 	def melihattype(mdn):
-		z = mdn.shapes(0)
-		z.shapetype
+		h = mdn.shapes(0)
+		h.shapetype
 		
 	def __init__(mks,makasar):
 		mks.sf = shapefile.Reader(makasar)
 	def melihattype(mks):
-		z = mks.shapes(0)
-		z.shapetype
+		g = mks.shapes(0)
+		g.shapetype
 
 	def __init__(pnt,pontianak):
 		pnt.sf = shapefile.Reader(pontianak)
@@ -63,3 +63,9 @@ class Gede(object):
 	def melihattype(ldn):
 		d = pnt.shapes(0)
 		d.shapetype
+		
+	def __init__(rma,roma):
+		rma.sf = shapefile.Reader(roma)
+	def melihattype(rma):
+		e = pnt.shapes(0)
+		e.shapetype
