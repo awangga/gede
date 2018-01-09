@@ -58,3 +58,8 @@ class Gede(object):
 		c = pnt.shapes(0)
 		c.shapetype
 
+	def __init__(ldn,london):
+		ldn.sf = shapefile.Reader(london)
+	def melihattype(ldn):
+		d = pnt.shapes(0)
+		d.shapetype
