@@ -164,6 +164,23 @@ class Gede(object):
         labelname = self.imagename + '.txt'
         self.labelfilename = os.path.join(self.outDir, labelname)
 	bbox_cnt = 0
+        
+	if os.path.exists(self.labelfilename):
+            with open(self.labelfilename) as f:
+                for (i, line) in enumerate(f):
+                    if i == 0:
+                        bbox_cnt = int(line.strip())
+                        continue
+                    tmp = [int(t.strip()) for t in line.split()]
+##                    print tmp
+                    self.bboxList.append(tuple(tmp))
+                    tmpId = self.mainPanel.create_rectangle(tmp[0], tmp[1], \
+                                                            tmp[2], tmp[3], \
+                                                            width = 2, \
+                                                            outline = COLORS[(len(self.bboxList)-1) % len(COLORS)])
+                    self.bboxIdList.append(tmpId)
+                    self.listbox.insert(END, '(%d, %d) -> (%d, %d)' %(tmp[0], tmp[1], tmp[2], tmp[3]))
+                    self.listbox.itemconfig(len(self.bboxIdList) - 1, fg = COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
 self.parent.resizable(width = FALSE, height = FALSE)
 
