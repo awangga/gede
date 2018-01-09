@@ -128,6 +128,12 @@ class Gede(object):
 				if a[1] == Water Blaster:
 						return i
 				i=i+1	
+	def selectTempat(self, Pasar Johar):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Pasar Johar:
+						return i
+				i=i+1	
 
 	
 
