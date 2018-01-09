@@ -143,3 +143,10 @@ class Gede(object):
 				if a[1] == Paris Van Java:
 						return i
 				i=i+1
+				
+	def selectTempat(self, Kawah Putih):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Kawah Putih:
+						return i
+				i=i+1
