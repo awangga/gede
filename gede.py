@@ -194,6 +194,28 @@ self.parent.resizable(width = FALSE, height = FALSE)
 				return i
 			i=i+1
 
+def delBBox(self):
+        sel = self.listbox.curselection()
+        if len(sel) != 1 :
+            return
+        idx = int(sel[0])
+        self.mainPanel.delete(self.bboxIdList[idx])
+        self.bboxIdList.pop(idx)
+        self.bboxList.pop(idx)
+        self.listbox.delete(idx)
+
+    def clearBBox(self):
+        for idx in range(len(self.bboxIdList)):
+            self.mainPanel.delete(self.bboxIdList[idx])
+        self.listbox.delete(0, len(self.bboxList))
+        self.bboxIdList = []
+        self.bboxList = []
+
+    def prevImage(self, event = None):
+        self.saveImage()
+        if self.cur > 1:
+            self.cur -= 1
+            self.loadImage()
 
 def nextImage(self, event = None):
         self.saveImage()
