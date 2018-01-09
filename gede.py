@@ -147,4 +147,24 @@ class Gede(object):
 			if a[1] == Jalan Raya Lembang:
 				return i 
 			i = i + 1	
-		
+			
+	def selectJalan(self,Jalan Pasirkaliki):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Pasirkaliki:
+				return i 
+			i = i + 1	
+			
+	def selectJalan(self,Jalan Pajajaran):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Pajajaran:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Terusan Perintis):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Terusan Perintis:
+				return i 
+			i = i + 1	
