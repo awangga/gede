@@ -30,6 +30,12 @@ class Gede(object):
 				if a[1] == Kartika Sari:
 						return i
 				i=i+1
+	def selectTempat(self,Secapa_AD):
+		i =0 
+		for a in self.sf.records():
+				if a[1] == Secapa_AD:
+						return i
+				i=i+1
 	def selectTempat(self,Borma_Toserba_Setiabudi):
 		i =0 
 		for a in self.sf.records():
