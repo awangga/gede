@@ -107,10 +107,6 @@ class Gede(object):
 				if a[1] == NuArt Sculpture Park:
 						return i
 				i=i+1			
-
-				
-	def __init__(self,Semarang):
-		self.sf = shapefile.Reader(Semarang)
 		
 	def selectTempat(self, Klenteng Sam Poo Kong):
 		i =0
