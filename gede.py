@@ -65,6 +65,10 @@ class Gede(object):
         	self.label.grid(row = 1, column = 0, sticky = E)
         	self.entry = Entry(self.frame)
         	self.entry.grid(row = 2, column = 1, sticky = W+E)
+		 (self.label = Label(self.frame, text = "Image Dir:")
+        	self.label.grid(row = 1, column = 0, sticky = E)
+        	self.entry = Entry(self.frame)
+        	self.entry.grid(row = 2, column = 1, sticky = W+E)
 		 self.entry = Entry(self.frame)
         	self.entry.grid(row = 2, column = 1, sticky = W+E)
         	
