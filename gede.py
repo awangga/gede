@@ -98,7 +98,13 @@ class Gede(object):
 				if a[1] == Apotek Kimia Farma - Braga:
 						return i
 				i=i+1
-				
+	
+	def selectTempat(self, Stasiun Kereta Api Bandung):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Stasiun Kereta Api Bandung:
+						return i
+				i=i+1			
 				
 		
 	def selectTempat(self, Museum Konferensi Asia Afrika):
@@ -106,8 +112,7 @@ class Gede(object):
 		for a in self.sf.records():
 				if a[1] == Museum Konferensi Asia Afrika:
 						return i
-				i=i+1
-				
+				i=i+1			
 				
 	def selectTempat(self, Dufan):
 		i =0
