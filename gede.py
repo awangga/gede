@@ -201,4 +201,12 @@ class Gede(object):
 						return i
 				i=i+1
 				
+	
+	def selectTempat(self, Amazing Art World):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Amazing Art World:
+						return i
+				i=i+1
+				
 				
