@@ -189,7 +189,14 @@ class Gede(object):
                     self.listbox.insert(END, '(%d, %d) -> (%d, %d)' %(tmp[0], tmp[1], tmp[2], tmp[3]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1, fg = COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
-			def mouseClick(self, event):
+		 def saveImage(self):
+        with open(self.labelfilename, 'w') as f:
+            f.write('%d\n' %len(self.bboxList))
+            for bbox in self.bboxList:
+                f.write(' '.join(map(str, bbox)) + '\n')
+	print 'Image No. %d saved' %(self.cur)
+		 
+	def mouseClick(self, event):
         if self.STATE['click'] == 0:
             self.STATE['x'], self.STATE['y'] = event.x, event.y
         else:
