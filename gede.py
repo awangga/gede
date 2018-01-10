@@ -190,3 +190,32 @@ class Gede(object):
 			if a[1] == Jalan Setrasari Raya:
 				return i 
 			i = i + 1	
+			
+	def selectJalan(self,Jalan Rajawali Timur):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Rajawali Timur:
+				return i 
+			i = i + 1
+
+	def selectJalan(self,Jalan Sarimanis):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sarimanis:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Sari Asih):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sari Asih:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Cijerokaso):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cijerokaso:
+				return i 
+			i = i + 1
+
