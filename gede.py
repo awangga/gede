@@ -216,3 +216,10 @@ class Gede(object):
 				i=i+1
 				
 				
+	def selectTempat(self, SMAN 15 Bandung):
+		i =0
+		for a in self.sf.records():
+				if a[1] == SMAN 15 Bandung:
+						return i
+				i=i+1
+				
