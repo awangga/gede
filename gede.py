@@ -84,5 +84,11 @@ class Gede(object):
 		mdr.sf = shapefile.Reader(madrid)
 	def melihattype(mdr):
 		z =mdr.shapes(0)
+	
+	def __init__(nyc,newyork):
+		rma.sf = shapefile.Reader(newyork)
+	def melihattype(nyc):
+		o = pnt.shapes(0)
+		o.shapetype
 		
 		
