@@ -185,6 +185,38 @@ class Gede(object):
                     self.listbox.insert(END, '(%d, %d) -> (%d, %d)' %(tmp[0], tmp[1], tmp[2], tmp[3]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1, fg = COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
+			def mouseClick(self, event):
+        if self.STATE['click'] == 0:
+            self.STATE['x'], self.STATE['y'] = event.x, event.y
+        else:
+            x1, x2 = min(self.STATE['x'], event.x), max(self.STATE['x'], event.x)
+            y1, y2 = min(self.STATE['y'], event.y), max(self.STATE['y'], event.y)
+            self.bboxList.append((x1, y1, x2, y2))
+            self.bboxIdList.append(self.bboxId)
+            self.bboxId = None
+            self.listbox.insert(END, '(%d, %d) -> (%d, %d)' %(x1, y1, x2, y2))
+            self.listbox.itemconfig(len(self.bboxIdList) - 1, fg = COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
+        self.STATE['click'] = 1 - self.STATE['click']
+
+    def mouseMove(self, event):
+        self.disp.config(text = 'x: %d, y: %d' %(event.x, event.y))
+        if self.tkimg:
+            if self.hl:
+                self.mainPanel.delete(self.hl)
+            self.hl = self.mainPanel.create_line(0, event.y, self.tkimg.width(), event.y, width = 2)
+            if self.vl:
+                self.mainPanel.delete(self.vl)
+            self.vl = self.mainPanel.create_line(event.x, 0, event.x, self.tkimg.height(), width = 2)
+        if 1 == self.STATE['click']:
+            if self.bboxId:
+                self.mainPanel.delete(self.bboxId)
+            self.bboxId = self.mainPanel.create_rectangle(self.STATE['x'], self.STATE['y'], \
+                                                            event.x, event.y, \
+                                                            width = 2  , \
+                                                            outline = COLORS[len(self.bboxList) % len(COLORS)])
+                               
+
+			
 self.parent.resizable(width = FALSE, height = FALSE)
 
 	def itungBaris(self):
