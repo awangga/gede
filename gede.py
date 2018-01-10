@@ -177,7 +177,7 @@ class Gede(object):
 						return i
 				i=i+1
 				
-				def selectTempat(self, Kawah Putih):
+	def selectTempat(self, villa istana bunga):
 		i =0
 		for a in self.sf.records():
 				if a[1] == villa istana bunga:
@@ -191,3 +191,14 @@ class Gede(object):
 				if a[1] == Bandung Adventist Hospital:
 						return i
 				i=i+1
+				
+				
+				
+	def selectTempat(self, Donat Madu):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Donat Madu:
+						return i
+				i=i+1
+				
+				
