@@ -227,26 +227,12 @@ class Gede(object):
                                                             outline = COLORS[len(self.bboxList) % len(COLORS)])
                                
 
-			
-self.parent.resizable(width = FALSE, height = FALSE)
-
-	def itungBaris(self):
-		rec = self.sf.shapes()
-		return len(rec)
-	def selectNegara(self,NEGARA):
-		i = 0
-		for a in self.sf.records():
-			if a[8] == NEGARA:
-				return i
-			i=i+1
-		
-
-    def cancelBBox(self, event):
+		def cancelBBox(self, event):
         if 1 == self.STATE['click']:
             if self.bboxId:
                 self.mainPanel.delete(self.bboxId)
                 self.bboxId = None
-                self.STATE['click'] = 0
+self.STATE['click'] = 0
 
 def delBBox(self):
         sel = self.listbox.curselection()
