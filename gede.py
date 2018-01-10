@@ -232,23 +232,7 @@ self.parent.resizable(width = FALSE, height = FALSE)
 			if a[8] == NEGARA:
 				return i
 			i=i+1
-		 
-def mouseMove(self, event):
-        self.disp.config(text = 'x: %d, y: %d' %(event.x, event.y))
-        if self.tkimg:
-            if self.hl:
-                self.mainPanel.delete(self.hl)
-            self.hl = self.mainPanel.create_line(0, event.y, self.tkimg.width(), event.y, width = 2)
-            if self.vl:
-                self.mainPanel.delete(self.vl)
-            self.vl = self.mainPanel.create_line(event.x, 0, event.x, self.tkimg.height(), width = 2)
-        if 1 == self.STATE['click']:
-            if self.bboxId:
-                self.mainPanel.delete(self.bboxId)
-            self.bboxId = self.mainPanel.create_rectangle(self.STATE['x'], self.STATE['y'], \
-                                                            event.x, event.y, \
-                                                            width = 2, \
-                                                            outline = COLORS[len(self.bboxList) % len(COLORS)])
+		
 
     def cancelBBox(self, event):
         if 1 == self.STATE['click']:
