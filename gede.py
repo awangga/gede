@@ -69,3 +69,20 @@ class Gede(object):
 	def melihattype(rma):
 		e = pnt.shapes(0)
 		e.shapetype
+		
+	def __init__(dpk,depok):
+		dpk.sf = shapefile.Reader(depok)
+	def melihattype(dpk):
+		z = dpk.shapes(0)
+		
+	def __init__(tsk,tasikmalaya):
+		tsk.sf = shapefile.Reader(tasikmalaya)
+	def melihattype(tsk):
+		z = tsk.shapes(0) 
+		
+	def __init__(mdr,madrid):
+		mdr.sf = shapefile.Reader(madrid)
+	def melihattype(mdr):
+		z =mdr.shapes(0)
+		
+		
