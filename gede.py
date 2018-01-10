@@ -154,7 +154,13 @@ class Gede(object):
 				if a[1] == Pasar Johar:
 						return i
 				i=i+1	
-
+				
+	def selectTempat(self, UNDIP):
+		i =0
+		for a in self.sf.records():
+				if a[1] == UNDIP:
+						return i
+				i=i+1	
 	
 
 	def selectTempat(self, Paris Van Java):
