@@ -83,6 +83,15 @@ class Gede(object):
         	self.btnDel.grid(row = 3, column = 2, sticky = W+E+N)
         	self.btnClear = Button(self.frame, text = 'ClearAll', command = self.clearBBox)
         	self.btnClear.grid(row = 4, column = 2, sticky = W+E+N)
+		 
+		 					self.lb1 = Label(self.frame, text = 'Bounding boxes:')
+       		self.lb1.grid(row = 1, column = 2,  sticky = W+N)
+        	self.listbox = Listbox(self.frame, width = 22, height = 12)
+        	self.listbox.grid(row = 2, column = 2, sticky = N)
+        	self.btnDel = Button(self.frame, text = 'Delete', command = self.delBBox)
+        	self.btnDel.grid(row = 3, column = 2, sticky = W+E+N)
+        	self.btnClear = Button(self.frame, text = 'ClearAll', command = self.clearBBox)
+        	self.btnClear.grid(row = 4, column = 2, sticky = W+E+N)
 		
 		self.ctrPanel = Frame(self.frame)
         	self.ctrPanel.grid(row = 5, column = 1, columnspan = 2, sticky = W+E)
