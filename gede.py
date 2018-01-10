@@ -120,10 +120,10 @@ class Gede(object):
 						return i
 				i=i+1			
 				
-	def selectTempat(self, Dufan):
+	def selectTempat(self, Dusun Bambu):
 		i =0
 		for a in self.sf.records():
-				if a[1] == Dufan:
+				if a[1] == Dusun Bambu:
 						return i
 				i=i+1
 
@@ -220,6 +220,14 @@ class Gede(object):
 		i =0
 		for a in self.sf.records():
 				if a[1] == SMAN 15 Bandung:
+						return i
+				i=i+1
+				
+				
+	def selectTempat(self, Dago Dream Park):
+		i =0
+		for a in self.sf.records():
+				if a[1] ==  Dago Dream Park:
 						return i
 				i=i+1
 				
