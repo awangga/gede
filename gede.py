@@ -239,3 +239,10 @@ class Gede(object):
 						return i
 				i=i+1
 				
+
+	def selectTempat(self, Bandung Station):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Bandung Station:
+						return i
+				i=i+1
