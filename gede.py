@@ -97,4 +97,8 @@ class Gede(object):
 		t = pnt.shapes(0)
 		t.shapetype
 		
-		
+	def __init__(sdy,sydney):
+		sdy.sf = shapefile.Reader(sydney)
+	def melihattype(sdy):
+		s = pnt.shapes(0)
+		s.shapetype
