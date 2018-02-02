@@ -69,6 +69,107 @@ class Gede(object):
 						return i
 				i=i+1
 
+	def itungBaris(self):
+		rec = self.sf.shapes()
+		return len(rec)
+	def selectNegara(self,NEGARA):
+		i = 0
+		for a in self.sf.records():
+			if a[8] == NEGARA:
+				return i
+			i=i+1
+			
+	def __init__(qefl,bandung):
+		qefl.sf = shapefile.Reader(bandung)
+	def melihattype(qefl):
+		a = qelf.shapes(0)
+		a.shapetype
+
+	def __init__(jkt,jakarta):
+		jkt.sf = shapefile.Reader(jakarta)
+	def melihattype(jkt):
+		f = jkt.shapes(0)
+		f.shapetype
+
+	def __init__(smg,semarang):
+		smg.sf = shapefile.Reader(semarang)
+	def melihattype(smg):
+		b = smg.shapes(0)
+		b.shapetype
+
+	def __init__(sby,surabaya):
+		sby.sf = shapefile.Reader(surabaya)
+	def melihattype(sby):
+		zbb = sby.shapes(0)
+		zbb.shapetype
+		
+	def __init__(mdn,medan):
+		mdn.sf = shapefile.Reader(medan)
+	def melihattype(mdn):
+		h = mdn.shapes(0)
+		h.shapetype
+		
+	def __init__(mks,makasar):
+		mks.sf = shapefile.Reader(makasar)
+	def melihattype(mks):
+		g = mks.shapes(0)
+		g.shapetype
+
+	def __init__(pnt,pontianak):
+		pnt.sf = shapefile.Reader(pontianak)
+	def melihattype(pnt):
+		c = pnt.shapes(0)
+		c.shapetype
+
+	def __init__(ldn,london):
+		ldn.sf = shapefile.Reader(london)
+	def melihattype(ldn):
+		d = ldn.shapes(0)
+		d.shapetype
+		
+	def __init__(rma,roma):
+		rma.sf = shapefile.Reader(roma)
+	def melihattype(rma):
+		e = rma.shapes(0)
+		e.shapetype
+		
+	def __init__(dpk,depok):
+		dpk.sf = shapefile.Reader(depok)
+	def melihattype(dpk):
+		zaz = dpk.shapes(0)
+		zaz.shapetype
+	def __init__(tsk,tasikmalaya):
+		tsk.sf = shapefile.Reader(tasikmalaya)
+	def melihattype(tsk):
+		z = tsk.shapes(0) 
+		z.shapetype
+	def __init__(mdr,madrid):
+		mdr.sf = shapefile.Reader(madrid)
+	def melihattype(mdr):
+		zz =mdr.shapes(0)
+	zz.shapetype
+	def __init__(nyc,newyork):
+		nyc.sf = shapefile.Reader(newyork)
+	def melihattype(nyc):
+		o = nyc.shapes(0)
+		o.shapetype
+
+	def __init__(tky,tokyo):
+		tky.sf = shapefile.Reader(tokyo)
+	def melihattype(tky):
+		t = tky.shapes(0)
+		t.shapetype
+		
+	def __init__(sdy,sydney):
+		sdy.sf = shapefile.Reader(sydney)
+	def melihattype(sdy):
+		s = sdy.shapes(0)
+		s.shapetype
+	def __init__(slt,salatiga):
+		slt.sf = shapefile.Reader(salatiga)
+	def melihattype(slt):
+		x = slt.shapes(0)
+		x.shapetype
 		
 	def selectTempat(self, Masjid Raya Bandung):
 		i =0
