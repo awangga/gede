@@ -1,4 +1,4 @@
-#!/usr/bin/python
+=#!/usr/bin/python
 
 import shapefile
 from Tkinter import *
@@ -361,6 +361,245 @@ if __name__ == '__main__':
 			if a[8] == NEGARA:
 				return i
 			i=i+1
+		
+	def __init__(self,bandung):
+		self.sf = shapefile.Reader(bandung)
+		
+	def selectJalan(self,Jalan Tubagus Ismail Raya):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Tubagus Ismail Raya:
+				return i 
+			i = i + 1
+				
+	def selectJalan(self,Jalan Sarijadi Raya):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sarijadi Raya:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Geger Kalong Girang):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Geger Kalong Girang:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Cendana):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cendana:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Sukajadi):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sukajadi:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Pasir Koja):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Pasir Koja:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Banda):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Banda:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Cipaganti):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cipaganti:
+				return i 
+			i = i + 1			
+	
+	def selectJalan(self,Jalan Sukaraja):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sukaraja:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Bengawan):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Bengawan:
+				return i 
+			i = i + 1
+		
+
+	def selectJalan(self,Jalan Dago):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Dago:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Layang Pasupati):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Layang Pasupati:
+				return i 
+			i = i + 1
+	
+	def selectJalan(self,Jalan Surapati):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Surapati:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Diponegoro):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Diponegoro:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Citarum):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Citarum:
+				return i 
+			i = i + 1
+			
+	
+	def selectJalan(self,Jalan Cikutra):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cikutra:
+				return i 
+			i = i + 1
+
+			
+	def selectJalan(self,Jalan Laswi):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Laswi:
+				return i 
+			i = i + 1	
+			
+ 	def selectJalan(self,Jalan Soekarno Hatta):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Soekarno Hatta:
+				return i 
+			i = i + 1
+		
+	def selectJalan(self,Jalan Turangga):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Turangga:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Buah Batu):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Buah Batu:
+				return i 
+			i = i + 1
+		
+	def selectJalan(self,Jalan Raya Lembang):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Raya Lembang:
+				return i 
+			i = i + 1	
+			
+	def selectJalan(self,Jalan Pasirkaliki):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Pasirkaliki:
+				return i 
+			i = i + 1	
+			
+	def selectJalan(self,Jalan Pajajaran):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Pajajaran:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Terusan Perintis):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Terusan Perintis:
+				return i 
+			i = i + 1	
+			
+			
+	def selectJalan(self,Jalan Cipedes Atas):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cipedes Atas:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Setrasari Raya):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Setrasari Raya:
+				return i 
+			i = i + 1	
+			
+	def selectJalan(self,Jalan Rajawali Timur):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Rajawali Timur:
+				return i 
+			i = i + 1
+
+	def selectJalan(self,Jalan Sarimanis):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sarimanis:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Sari Asih):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Sari Asih:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Cijerokaso):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Cijerokaso:
+				return i 
+			i = i + 1
+
+			
+	def selectJalan(self,Jalan Kolonel Masturi):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Kolonel Mastur:
+				return i 
+			i = i + 1
+			
+	def selectJalan(self,Jalan Karya Bakti):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Karya Bakti:
+				return i 
+			i = i + 1
+
+	def selectJalan(self,Jalan Tol Padaleunyi):
+		i = 0
+		for a in self.sf.records():
+			if a[1] == Jalan Tol Padaleunyi:
+				return i 
+			i = i + 1
 			
 	def __init__(qefl,bandung):
 		qefl.sf = shapefile.Reader(bandung)
@@ -436,6 +675,7 @@ if __name__ == '__main__':
 	def melihattype(nyc):
 		o = nyc.shapes(0)
 		o.shapetype
+
 
 	def __init__(tky,tokyo):
 		tky.sf = shapefile.Reader(tokyo)
