@@ -1,0 +1,64 @@
+MAP
+  NAME WCS_server
+  STATUS ON
+  SIZE 400 300
+  SYMBOLSET "../etc/symbols.txt"
+  EXTENT -2200000 -712631 3072800 3840000
+  UNITS METERS
+  SHAPEPATH "../data"
+  IMAGECOLOR 255 255 255
+  FONTSET "../etc/fonts.txt"
+
+
+  #
+  # Start of web interface definition
+  #
+  WEB
+    IMAGEPATH "/ms4w/tmp/ms_tmp/"
+    IMAGEURL "/ms_tmp/"
+    METADATA
+      "wcs_label"           "GMap WCS Demo Server" ### required
+      "wcs_description"     "Some text description of the service"
+      "wcs_onlineresource"  "http://127.0.0.1/CGI-Executables/mapserv.cgi?map=mywcs.map&" ### recommended
+      "wcs_fees"            "none"
+      "wcs_accessconstraints"    "none"
+      "wcs_keywordlist"          "wcs,test"
+      "wcs_metadatalink_type"    "TC211"
+      "wcs_metadatalink_format"  "text/plain"
+      "wcs_metadatalink_href"    "http://awangga.net"
+      "wcs_address"              "124 Gilmour Street"
+      "wcs_city"                 "Ottawa"
+      "wcs_stateorprovince"      "ON"
+      "wcs_postcode"             "90210"
+      "wcs_country"              "Canada"
+      "wcs_contactelectronicmailaddress" "blah@blah"
+      "wcs_contactperson"            "me"
+      "wcs_contactorganization"      "unemployed"
+      "wcs_contactposition"          "manager"
+      "wcs_contactvoicetelephone"    "613-555-1234"
+      "wcs_contactfacimiletelephone" "613-555-1235"
+      "wcs_service_onlineresource"   "http://127.0.0.1/CGI-Executables/mapserv.cgi?map=mywcs.map&"
+      "wcs_enable_request"           "*"
+    END
+  END
+
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+
+  LAYER
+    NAME bathymetry
+    METADATA
+      "wcs_label"           "Elevation/Bathymetry"  ### required
+      "wcs_rangeset_name"   "Range 1"  ### required to support DescribeCoverage request
+      "wcs_rangeset_label"  "My Label" ### required to support DescribeCoverage request
+    END
+    TYPE RASTER ### required
+    STATUS ON
+    DATA Indonesia_DNI_poster-map_1200x800mm-300dpi_v20170512.tif
+    PROJECTION
+      "init=epsg:4326"
+    END
+  END
+END # Map File
