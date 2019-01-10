@@ -1,9 +1,12 @@
 map
   size 640 480
+  EXTENT 94.5011475 -11.007385 141.01947 6.076721
+  UNITS DD
   imagetype png8
   imagecolor 225 225 225
-  shapepath "../shp"
-  fontset "../common/fonts/msfontset.txt"
+  shapepath "../data/indonesia"
+  #fontset "../common/fonts/msfontset.txt"
+  FONTSET "../etc/fonts.txt"
   projection
     "init=epsg:4326"
   end
@@ -12,7 +15,7 @@ map
     imagepath "/var/www/html/tmp/"
     imageurl "/tmp/"
     metadata
-      wms_title "Awangga Geo Map"
+      wms_title "Peta Indonesia"
       wms_srs "EPSG:4326"
       wms_enable_request "*"
     end
@@ -72,7 +75,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        ##
         type truetype
         size 6
         position lc
@@ -88,7 +91,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        ##
         type truetype
         size 6
         position lc
@@ -104,7 +107,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -120,7 +123,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -136,7 +139,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -152,7 +155,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -168,7 +171,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -184,7 +187,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -200,7 +203,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -216,7 +219,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -232,7 +235,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -248,7 +251,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -264,7 +267,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -280,7 +283,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -296,7 +299,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -312,7 +315,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -328,7 +331,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -344,7 +347,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -360,7 +363,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -376,7 +379,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -392,7 +395,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -408,7 +411,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -424,7 +427,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -440,7 +443,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -456,7 +459,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -472,7 +475,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -488,7 +491,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -504,7 +507,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -520,7 +523,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -536,7 +539,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -552,7 +555,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -568,7 +571,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -584,7 +587,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -600,7 +603,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        font "FreeSans"
+        #
         type truetype
         size 6
         position lc
@@ -634,7 +637,7 @@ map
       LABEL
         COLOR  0 0 0
         OUTLINECOLOR 255 255 255
-        FONT "FreeSans"
+        #
         TYPE truetype
         SIZE 8
         POSITION CC
