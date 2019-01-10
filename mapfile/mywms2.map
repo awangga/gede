@@ -1,0 +1,35 @@
+MAP
+  NAME "PETA INDONESIA"
+  EXTENT 94.5011475 -11.007385 141.01947 6.076721
+  UNITS DD
+  SHAPEPATH "../data/indonesia/"
+  SIZE 800 600
+
+  IMAGETYPE PNG24
+
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  WEB
+    METADATA
+      ows_enable_request "*"
+    END
+  END
+
+  LAYER
+    NAME "Indonesia"
+    STATUS ON
+    TYPE POLYGON
+    DATA "00"
+    CLASS
+      STYLE
+        COLOR 246 241 223
+        OUTLINECOLOR 0 0 0
+      END
+    END
+  END
+
+END
+
+#http://localhost/cgi-bin/mapserv.cgi?map=mywms2.map&SERVICE=WMS&REQUEST=Getmap&VERSION=1.1.1&LAYERS=Indonesia&SRS=EPSG:4326&BBOX=94.5011475,-11.007385,141.01947,6.076721&FORMAT=PNG&WIDTH=800&HEIGHT=600
