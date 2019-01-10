@@ -1,0 +1,653 @@
+map
+  size 640 480
+  imagetype png8
+  imagecolor 225 225 225
+  shapepath "../shp"
+  fontset "../common/fonts/msfontset.txt"
+  projection
+    "init=epsg:4326"
+  end
+  debug on
+  web
+    imagepath "/var/www/html/tmp/"
+    imageurl "/tmp/"
+    metadata
+      wms_title "Awangga Geo Map"
+      wms_srs "EPSG:4326"
+      wms_enable_request "*"
+    end
+  end
+  outputformat
+    name "png256"
+    driver "AGG/PNG"
+    imagemode "pc256"
+    extension "png"
+  end
+  outputformat
+    name "png"
+    driver "AGG/PNG"
+    imagemode "rgba"
+    extension "png"
+    mimetype "image/png"
+    imagemode RGBA
+  end
+  outputformat
+    name "png8"
+    driver "AGG/PNG"
+    imagemode "rgba"
+    extension "png"
+    mimetype "image/png"
+    imagemode RGBA
+    transparent ON
+    formatoption "QUANTIZE_FORCE=ON"
+    formatoption "QUANTIZE_DITHER=ON"
+    formatoption "QUANTIZE_COLORS=250"
+  end
+  outputformat
+    name "jpg"
+    driver "AGG/JPEG"
+    extension "jpg"
+    formatoption "QUALITY=85"
+  end
+
+  layer #provinsi layer
+    name provinsi
+	minscale 500000
+    group roads
+    type POLYGON
+    dump true 
+    projection
+      "init=epsg:4326"
+    end
+    #transparency alpha
+    status on
+    data "00"
+    labelitem "PROVINSI"
+    classitem "PROVINSI"
+    class 
+      expression "ACEH"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SUMATERA UTARA"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SUMATERA BARAT"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "RIAU"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "JAMBI"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SUMATERA SELATAN"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "BENGKULU"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "LAMPUNG"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KEPULAUAN BANGKA BELITUNG"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KEPULAUAN RIAU"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "DKI JAKARTA"
+      style
+        color 0 255 0
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "JAWA BARAT"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "JAWA TENGAH"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "DAERAH ISTIMEWA YOGYAKARTA"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "JAWA TIMUR"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "BANTEN"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "BALI"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "NUSA TENGGARA BARAT"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "NUSA TENGGARA TIMUR"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KALIMANTAN BARAT"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KALIMANTAN TENGAH"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KALIMANTAN SELATAN"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KALIMANTAN TIMUR"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "KALIMANTAN UTARA"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SULAWESI UTARA"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SULAWESI TENGAH"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SULAWESI SELATAN"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SULAWESI TENGGARA"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "GORONTALO"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "SULAWESI BARAT"
+      style
+        color 153 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "MALUKU"
+      style
+        color 153 255 153
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "MALUKU UTARA"
+      style
+        color 204 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "PAPUA BARAT"
+      style
+        color 229 255 204
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+    class 
+      expression "PAPUA"
+      style
+        color 204 255 229
+      end
+      label
+        color  0 0 0
+        outlinecolor 255 255 255
+        font "FreeSans"
+        type truetype
+        size 6
+        position lc
+        partials true
+        mindistance 200
+      end
+    end
+  end #layer provinsi
+
+
+  #layer kabkot indonesia
+  LAYER
+    NAME base_map
+	group roads
+    TYPE POLYGON
+    STATUS ON
+    DATA "00"
+    POSTLABELCACHE FALSE
+    PROCESSING "LABEL_NO_CLIP=ON"
+    LABELCACHE ON
+    LABELITEM "KABKOT"
+    CLASS
+      #minscale 10000
+      maxscale 1500000
+      Name "indonesia_kab"
+      STYLE
+        COLOR 102 255 102
+        OUTLINECOLOR 200 200 200
+        SYMBOL 0
+      END
+      LABEL
+        COLOR  0 0 0
+        OUTLINECOLOR 255 255 255
+        FONT "FreeSans"
+        TYPE truetype
+        SIZE 8
+        POSITION CC
+        PARTIALS TRUE
+        MINDISTANCE 50
+        REPEATDISTANCE 9999
+      END
+    END
+    METADATA
+      "DESCRIPTION"   "Peta Indonesia"
+    END
+  END #layer kabkot indonesia
+
+
+
+end #map
