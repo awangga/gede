@@ -56,14 +56,14 @@ sources:
     type: mapserver
     req:
       layers: roads
-      map: /var/mapdata/mapfile/indo.map
+      map: /Library/WebServer/Documents/CGI-Executables/mywms.map
       transparent: true
     coverage:
       bbox: [94.5011475, -11.007385, 141.01947, 6.076721]
       srs: 'EPSG:4326'
     mapserver:
-      binary: /usr/libexec/mapserver
-      working_dir: /var/mapdata/tmp
+      binary: /usr/local/opt/mapserver/bin/mapserv
+      working_dir: /Users/awangga/Public/gede/tmp
     supported_srs: ['EPSG:4326']
 
 grids:
