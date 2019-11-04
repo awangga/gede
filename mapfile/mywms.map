@@ -4,7 +4,7 @@ map
   UNITS DD
   imagetype png8
   imagecolor 225 225 225
-  shapepath "../data/indonesia"
+  shapepath "../shp"
   #fontset "../common/fonts/msfontset.txt"
   FONTSET "../etc/fonts.txt"
   projection
@@ -75,7 +75,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        ##
+        font "sans"
         type truetype
         size 6
         position lc
@@ -91,7 +91,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        ##
+        font "sans"
         type truetype
         size 6
         position lc
@@ -107,7 +107,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -123,7 +123,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -139,7 +139,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -155,7 +155,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -171,7 +171,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -187,7 +187,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -203,7 +203,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -219,7 +219,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -235,7 +235,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -251,7 +251,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -267,7 +267,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -283,7 +283,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -299,7 +299,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -315,7 +315,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -331,7 +331,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -347,7 +347,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -363,7 +363,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -379,7 +379,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -395,7 +395,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -411,7 +411,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -427,7 +427,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -443,7 +443,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -459,7 +459,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -475,7 +475,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -491,7 +491,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -507,7 +507,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -523,7 +523,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -539,7 +539,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -555,7 +555,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -571,7 +571,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -587,7 +587,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -603,7 +603,7 @@ map
       label
         color  0 0 0
         outlinecolor 255 255 255
-        #
+        font "sans"
         type truetype
         size 6
         position lc
@@ -637,7 +637,7 @@ map
       LABEL
         COLOR  0 0 0
         OUTLINECOLOR 255 255 255
-        #
+        font "sans"
         TYPE truetype
         SIZE 8
         POSITION CC
