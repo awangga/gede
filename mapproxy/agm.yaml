@@ -48,7 +48,7 @@ layers:
 
 caches:
   agm_cache:
-    grids: [webmercator]
+    grids: [petaindo]
     sources: [agm_source]
     
 sources:
@@ -67,7 +67,7 @@ sources:
     supported_srs: ['EPSG:4326']
 
 grids:
-    webmercator:
+    petaindo:
         base: GLOBAL_WEBMERCATOR
 
 globals:
